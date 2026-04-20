@@ -1,0 +1,21 @@
+import os
+
+CONFIDENCE_THRESHOLD = 0.4
+
+FIGHT_SPEED_THRESHOLD = 60
+FIGHT_DISTANCE_THRESHOLD = 180
+FIGHT_MIN_CONSECUTIVE_FRAMES = 8
+
+FPS = 30
+BUFFER_SECONDS = 10
+
+# Backend API URL (change to your Render URL in production)
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
+RECEIVER_EMAIL = os.getenv("RECEIVER_EMAIL")
+
+# Crowd density thresholds
+CROWD_LOW_MAX = 2
+CROWD_HIGH_MIN = 7

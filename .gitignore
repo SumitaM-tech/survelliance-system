@@ -1,0 +1,10 @@
+node_modules/
+frontend/node_modules/
+venv/
+__pycache__/
+.env
+*.env
+*.db
+*.pt
+*.mp4
+local/clips/
