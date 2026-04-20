@@ -9,7 +9,8 @@ import json
 from behavior_engine import engine as behavior_engine
 
 app = FastAPI(title="AI Surveillance Backend")
-
+@app.get("/health")
+def health(): return {"ok": True}
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
